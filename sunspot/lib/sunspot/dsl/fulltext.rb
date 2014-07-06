@@ -93,7 +93,7 @@ module Sunspot
       #   this particular field (only has an effect if :phrase_highlighter is
       #   true as well)
       #
-      def highlight(*args)
+      def mm_highlight(*args)
         options = args.last.kind_of?(Hash) ? args.pop : {}
         fields = []
         args.each { |field_name| fields.concat(@setup.text_fields(field_name)) }
